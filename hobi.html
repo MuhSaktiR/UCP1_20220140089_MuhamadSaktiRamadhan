@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCP 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            font-size: 40px;
+            padding-top: 200px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 10vh;
+        }
+
+        .circle-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: white;
+            margin: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .circle:hover {
+            transform: scale(1.1);
+            background-color: white;
+            color: black;
+            text-shadow: white 2px;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-rocket icon-pdw"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link-1" href="utama.html">PRAKTIKUM PDW</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> <!-- Menggunakan ml-auto di sini -->
+                <li class="nav-item">
+                    <a class="nav-link" href="utama.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tentang Ku
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="profil.html">Profil</a>
+                        <a class="dropdown-item" href="keterampilan.html">Skill</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Apa Hayo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="favorite.html">Kesukaan</a>
+                        <a class="dropdown-item" href="hobi.html">Hobi</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>    
+
+    <h1 style="color: white;">Hobi Ku...Sepertinya?</h1>
+    <script src="hobi.js"></script>
+    <div class="circle-container">
+        <div class="circle">
+            <p>Gaming &#127918; </p>
+        </div>
+        <div class="circle">
+            <p>Nonton Film &#127916;</p>
+        </div>
+        <div class="circle">
+            <p>Makan &#129383;</p>
+        </div>
+        <div class="circle">
+            <p>Olahraga &#127939;</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <p>Pengembangan Desain Web - 2024 - kelas B</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/akun_instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/akun_linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/akun_github"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/in/akun_youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

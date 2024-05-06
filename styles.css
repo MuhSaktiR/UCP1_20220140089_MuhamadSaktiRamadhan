@@ -1,0 +1,479 @@
+body {
+    margin: 0;
+    color: #CFD8DC;
+    text-align: left;
+    background-color: rgb(130, 158, 184);
+    font-family: "Lalezar", system-ui;
+}
+
+.teks-nav {
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 700px;
+    margin-left: 40px;
+    padding: 15px;
+}
+
+.dropdown-menu {
+    background-color: white; /* Warna latar belakang dropdown menu */
+    box-shadow: 0 1px 2px black;
+
+}
+
+.dropdown-item {
+    color: black; /* Warna teks pada item dropdown */
+}
+
+.nav-link-1 {
+    color: gray;
+    text-decoration: none; /* Menghilangkan underline */
+    font-size: 19px;
+    padding: 0 15px;
+}
+
+.nav-link-1:hover {
+    text-decoration: none; /* Menghilangkan underline saat dihover */
+    color: darkslategrey; /* Mengatur warna teks ketika dihover */
+}
+
+.dropdown-item:hover {
+    background-color: lightslategray; /* Warna latar belakang item dropdown saat dihover */
+    color: black; /* Warna teks item dropdown saat dihover */
+    box-shadow: 0 1px 2px black;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    background-color: lightsteelblue;
+    box-shadow: 0 1px 2px black;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    z-index: 1000; /* Untuk memastikan navbar berada di atas konten */
+    opacity: 1; /* Awalnya terlihat */
+    transition: opacity 0.2s ease; /* Transisi opasitas */
+}
+
+.navbar.hidden {
+    opacity: 0; /* Menghilangkan navbar */
+}
+
+.navbar.active {
+    top: -150px; /* Ketinggian navbar ketika di-scroll ke bawah */
+    transition: top 0.2s cubic-bezier(0.68, 0.65, 0.27, 1.55); /* cubic-bezier untuk transisi ke bawah */
+}
+
+.nav-link {
+    display: block;
+    padding: 0 15px;
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 19px;
+    transition: background-color 0.5 ease;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: darkslategrey;
+    min-width: 130px;
+    border-radius: 5px;
+    z-index: 10; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Tampilkan dropdown saat tautan dropdown dihover */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.home {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.home .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home h1 {
+    margin-bottom: 3px;
+}
+
+.home p {
+    margin-bottom: 33px;
+}
+
+.home button {
+    background-color: darkslategrey;
+    color: whitesmoke;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px whitesmoke;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.home button:hover {
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 4px 6px black;
+}
+
+section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container .row .text-vidio {
+    margin-bottom: -50px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.video {
+    padding-top: 330px;
+}
+
+.video-container {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    margin-bottom: -20px;
+}
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.video-grid iframe {
+    width: 100%;
+    margin-bottom: 20px; /* Menambah jarak antara video dan garis kotak */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.horizontal-image {
+    transform: rotate(90deg);
+}
+
+.video-item {
+    margin-bottom: 20px;
+}
+
+.video-item1 {
+    margin-bottom: 20px;
+    margin-right: 20px;
+
+
+}
+
+.video-container iframe {
+    width: 100%;
+}
+
+
+.Link-audio {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.link1-audio,
+.link2-audio,
+.link3-audio,
+.link4-audio {
+    padding: 20px;
+    flex: 1;
+}
+
+.Link-video {
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.link1-video,
+.link2-video,
+.link3-video {
+    padding: 20px;
+    flex: 1;
+}
+
+.gambar1,
+.gambar2,
+.gambar3 {
+    flex: 1;
+    margin: 0 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.gambar1:hover {
+    transform: scale(1.1);
+}
+
+.gambar2:hover {
+    transform: scale(1.1);
+}
+
+.gambar3:hover {
+    transform: scale(1.1);
+}
+
+.row-gambar {
+    display: flex;
+    justify-content: center;
+}
+
+.row-video {
+    padding-top: 250px;
+}
+
+.gambar1 img,
+.gambar2 img,
+.gambar3 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 50px;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
+}
+
+h3 {
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+h4 {
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+h5 {
+    color: whitesmoke;
+    font-size: 40px;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a8b94;
+}
+
+p {
+    font-size: 20px;
+}
+
+.footer {
+    background-color: white;
+    color: gray;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.7); /* Efek highlight putih */
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: black; /* Warna awal ikon */
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 30px;
+    transition: color 0.3s; /* Transisi warna ketika dihover */
+}
+
+.social-icons a:hover {
+    color: darkgray; /* Warna ikon ketika dihover */
+}
+
+
+.icon-pdw {
+    /* Atur gaya ikon sesuai kebutuhan */
+    color: grey; /* Misalnya, atur warna ikon menjadi biru */
+    font-size: 24px; /* Atur ukuran ikon */
+    transition: transform 0.3s ease; /* Transisi ketika ikon berubah */
+}
+
+.icon-pdw:hover {
+    animation: rocketAnimation 2s linear infinite; /* Animasi roket akan berlangsung selamanya dengan kecepatan linier */
+    color: darkslategray;
+}
+
+@keyframes rocketAnimation {
+    0% {
+        transform: rotate(0deg); /* Posisi awal, rotasi 0 derajat */
+    }
+    100% {
+        transform: rotate(360deg); /* Posisi akhir, rotasi 360 derajat (satu putaran penuh) */
+    }
+}
+
+/* Aturan untuk tampilan layar dengan lebar maksimum 768px */
+@media screen and (max-width: 768px) {
+    .teks-nav {
+        margin-right: 20px; /* Mengurangi margin untuk item navigasi */
+    }
+
+    .navbar {
+        padding: 10px; /* Mengurangi padding navbar */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Mengurangi ukuran font untuk item navigasi */
+    }
+
+    .home .container {
+        height: auto; /* Mengatur tinggi kontainer sesuai kebutuhan konten */
+    }
+
+    .video {
+        padding-top: 150px; /* Mengurangi padding atas untuk bagian video */
+    }
+
+    .row-video {
+        padding-top: 150px; /* Mengurangi padding atas untuk baris video */
+    }
+
+    .Link-audio {
+        margin-bottom: 10px; /* Mengurangi margin bawah untuk item audio */
+    }
+
+    .row-gambar {
+        flex-wrap: wrap; /* Mengizinkan gambar untuk melingkar saat ruang terbatas */
+    }
+
+    .gambar1,
+    .gambar2,
+    .gambar3 {
+        margin: 10px 0; /* Mengurangi margin untuk gambar */
+        width: 100%; /* Mengisi lebar untuk gambar */
+    }
+
+    h1 {
+        font-size: 30px; /* Mengurangi ukuran font untuk judul */
+    }
+
+    h2 {
+        font-size: 40px; /* Mengurangi ukuran font untuk sub-judul */
+    }
+
+    h3 {
+        font-size: 30px; /* Mengurangi ukuran font untuk sub-sub-judul */
+    }
+
+    h4,
+    h5 {
+        font-size: 20px; /* Mengurangi ukuran font untuk judul-judul kecil */
+    }
+
+    .footer {
+        padding: 10px 0; /* Mengurangi padding untuk bagian footer */
+    }
+
+    .social-icons a {
+        font-size: 24px; /* Mengurangi ukuran font untuk ikon sosial */
+    }
+}
+
+/* Aturan tambahan untuk menangani perangkat dengan layar sangat kecil, misalnya ponsel */
+@media screen and (max-width: 480px) {
+    .nav-link {
+        padding: 8px 12px; /* Mengurangi padding untuk item navigasi */
+    }
+
+    .home button {
+        padding: 10px 20px; /* Mengurangi padding untuk tombol */
+    }
+
+    .home h1 {
+        font-size: 24px; /* Mengurangi ukuran font untuk judul di halaman utama */
+    }
+
+    .home p {
+        font-size: 16px; /* Mengurangi ukuran font untuk teks di halaman utama */
+    }
+
+    h1 {
+        font-size: 24px; /* Mengurangi ukuran font untuk judul */
+    }
+
+    h2 {
+        font-size: 32px; /* Mengurangi ukuran font untuk sub-judul */
+    }
+
+    h3 {
+        font-size: 24px; /* Mengurangi ukuran font untuk sub-sub-judul */
+    }
+
+    h4,
+    h5 {
+        font-size: 16px; /* Mengurangi ukuran font untuk judul-judul kecil */
+    }
+
+    .social-icons a {
+        font-size: 20px; /* Mengurangi ukuran font untuk ikon sosial */
+    }
+}

@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCP 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .custom-tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px;
+        position: absolute;
+        bottom: 125%; /* Menggeser tooltip ke bawah gambar */
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s, bottom 0.3s; /* Menambahkan transisi untuk opacity dan posisi */
+        z-index: 1; /* Pastikan tooltip muncul di atas gambar */
+    }
+
+    .custom-tooltip .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+        bottom: 100%; /* Menggeser tooltip ke atas saat dihover */
+        z-index: 1; /* Pastikan tooltip muncul di atas gambar */
+    }
+    </style>
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-rocket icon-pdw"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link-1" href="utama.html">PRAKTIKUM PDW</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto"> <!-- Menggunakan ml-auto di sini -->
+                <li class="nav-item">
+                    <a class="nav-link" href="utama.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Tentang Ku
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="profil.html">Profil</a>
+                        <a class="dropdown-item" href="keterampilan.html">Skill</a>
+                        
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Apa Hayo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="favorite.html">Kesukaan</a>
+                        <a class="dropdown-item" href="hobi.html">Hobi</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="video" id="Video">
+        <div class="container">
+            <div class="row">
+                <div class="text-vidio">
+                    <h2>WELCOME HUMANS</h2>
+                    <p style="color: white; text-shadow: 2px white;">Kepo dengan Punya Ku ?</p>
+                </div>
+            </div>
+
+            <div class="row-video">
+                <h3 style>Favorite Youtubers</h3>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="video-container">
+                            <div class="video-grid">
+                                <div class="video-item">
+                                    <h6>MiawAug</h6>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mDq12qVj5jU?si=sRzf4g2tCuBXYwWG" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                                </div>
+                                <div class="video-item">
+                                    <h6>Tanboy Kun</h6>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zPkKNW0-JKQ?si=pSY2Jvnjp1K08U4y" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                                <div class="video-item1">
+                                    <h6>CoryXKenshin</h6>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9jczpQY7m-Q?si=aM4zJgt9J6Z3wqGY" 
+                                    title="YouTube video player" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Audio" id="Audio">
+        <div class="container">
+            <div class="row-textaudio">
+                <h4>Let's Sing Together</h4>
+                <p style="color: white;"> My playlist of the day</p>
+            </div>
+            <div class="row-Audio">
+                <div class="Link-audio">
+                    <div class="row">
+                        <div class="link1-audio">
+                            <h6>Sheila on 7</h6>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1MdjZzEInrmDBXf8zs0nKS?utm_source=generator" 
+                            width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="link2-audio">
+                            <h6>Jamrud</h6>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0yCXPhBN9nNh3CVBmc96EQ?utm_source=generator" 
+                            width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="link3-audio">
+                            <h6>Noah</h6>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1Q0EFGHGCXrtdiKUwCfWno?utm_source=generator" 
+                            width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                            </iframe>
+                        </div>
+                        <div class="link3-audio">
+                            <h6>Element</h6>
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1X80KdFJpedU4as4WGIgYM?utm_source=generator" 
+                            width="100%" height="352" frameBorder="0" allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Gambar" id="Gambar">
+        <div class="container">
+            <h5 class="heading-black">Kucing Kucingan</h5>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="#" class="position-relative">
+                            <img src="kucing.webp" class="card-img-top" alt="Gambar 1">
+                            <span class="position-absolute top-0 start-50 translate-middle tooltip custom-tooltip">
+                                <span class="tooltiptext">Meowww</span>
+                            </span>                            
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="#" class="position-relative d-block">
+                            <img src="kucing2.webp" class="card-img-top w-100" alt="Gambar 2">
+                            <span class="position-absolute top-0 start-50 translate-middle tooltip custom-tooltip">
+                                <span class="tooltiptext">Meowww</span>
+                            </span>                            
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="#" class="position-relative d-block">
+                            <img src="kucing3.webp" class="card-img-top w-100" alt="Gambar 3">
+                            <span class="position-absolute top-0 start-50 translate-middle tooltip custom-tooltip">
+                                <span class="tooltiptext">Meowww</span>
+                            </span>                            
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </section>
+    
+
+    <footer class="footer">
+        <div class="container-footer">
+            <p>Pengembangan Desain Web - 2024 - kelas B</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/akun_instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/akun_linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/akun_github"><i class="fab fa-github"></i></a>
+                <a href="https://www.youtube.com/in/akun_youtube"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="navbar.js"></script>
+</body>
+
+</html>
